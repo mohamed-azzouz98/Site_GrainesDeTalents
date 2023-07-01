@@ -2,8 +2,8 @@
 
 
 require_once('database/db_config.php');
-require_once('class/user.php');
-require_once('class/item.php');
+require_once('class/users.php');
+
 
 if (session_status() !== PHP_SESSION_ACTIVE) { // si la session n'est pas active 
     session_start(); // on la démarre 
@@ -22,35 +22,39 @@ if (session_status() !== PHP_SESSION_ACTIVE) { // si la session n'est pas active
         
         <section>
             <form action="" method="post">
-                <input type="text" name="pseudo" id="pseudo">
                 <label for="pseudo">Pseudo :</label>
+                <input type="text" name="pseudo" id="pseudo">
+               
 
                 <br>
-
-                <input type="password" name="password">
                 <label for="password">Password : </label>
+                <input type="password" name="password">
+                
+                <br>
+
+                <input type="submit" value="Add" name="add">
             </form>
         </section>
         <?php
-        if (isset($_POST['submitI'])) 
+        if (isset($_POST['add'])) 
         {
-            $pseudoI = $_POST['pseudoI'];
+            $pseudo = $_POST['pseudo'];
           
-            $passwordI = $_POST['passwordI'];
+            $password = $_POST['password'];
            
    
 
 
 
-            if (!empty($pseudoI) and !empty($passwordI) and   filter_input(INPUT_POST, 'pseudoI', FILTER_SANITIZE_FULL_SPECIAL_CHARS) ) 
+            if (!empty($pseudo) and !empty($password) and   filter_input(INPUT_POST, 'pseudo', FILTER_SANITIZE_FULL_SPECIAL_CHARS) ) 
             {
                
 
                    
 
-                        $passwordHash = password_hash($passwordI, PASSWORD_DEFAULT);
+                        $passwordHash = password_hash($password, PASSWORD_DEFAULT);
 
-                        $newUser = $user->add($db, $pseudoI, $emailI, $passwordHash);                
+                        $newUser = $user->add($db, $pseudo, $passwordHash);                
                     }
             } 
             

@@ -1,0 +1,94 @@
+body{
+    padding: 0;
+    margin: 0;
+   
+}
+
+h1{
+    width: 60%;
+    background-color: #FFFFFF;
+    padding: 12px;
+    text-align: center;
+
+}
+
+
+.navBar{
+    background-color: #9DB59B;
+    margin-bottom: 10px;
+    
+}
+
+.navBar img{
+    display: flex;
+    margin: 0 auto;
+    width: 10%;
+}
+
+.listNav{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: #947474;
+    padding: 8px;
+}
+
+.listNav a{
+    font-size: 20px;
+    color: #FFFFFF;
+    text-decoration: none; 
+    
+}
+
+
+footer section{
+    background-color: #D9D9D9;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer img{
+    width: 10%;
+}
+
+footer section div ul{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+footer i{
+    font-size: 35px;
+}
+
+
+
+
+
+
+#indexMain{
+    background-color: #9DB59B;
+    
+}
+
+#infoFormation{
+    background-color: #9DB59B;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#interviewProgram{
+    background-color: red;
+    width: 50%;
+    height: 400px;
+}
+
+#detailFormation{
+    background-color: #FFFFFF;
+    margin-top: 15px;
+    padding: 25px;
+}

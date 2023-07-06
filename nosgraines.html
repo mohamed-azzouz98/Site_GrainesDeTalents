@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+   
+    <title>Nos Graines</title>
+</head>
+<body>
+    <header>
+        
+        <nav class="navBar">
+            
+            <img src="img/logo.png" alt="">
+            
+            <div>
+                <ul class="listNav">
+                    <li><a href="index.html">Index</a></li>
+                    <li><a href="nosgraines.html">Nos Graines de Talents</a></li>
+                    <li><a href="gallerie.html">Gallerie Photos</a></li>
+                    <li><a href="jpo.html">Notre Journée Portes Ouvertes</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        
+        <div class="center">
+            <h1 class="titlePage">Nos Graines de Talents</h1>
+            <div class="wrapper">
+              <div class="inner">
+                <div class="card">
+                  <img src="img/logo.png" class="logo">
+                  <div class="content">
+                    <h1>Product Design</h1>
+                    <h3>UI/UX, Design</h3>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="img/logo.png" class="logo">
+                  <div class="content">
+                    <h1>Custom Website</h1>
+                    <h3>UI/UX, Design</h3>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="img/logo.png" class="logo">
+                  <div class="content">
+                    <h1>Digital Marketing</h1>
+                    <h3>UI/UX, Design</h3>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="img/logo.png" class="logo">
+                  <div class="content">
+                    <h1>Digital Marketing</h1>
+                    <h3>UI/UX, Design</h3>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="img/logo.png" class="logo">
+                  <div class="content">
+                    <h1>Digital Marketing</h1>
+                    <h3>UI/UX, Design</h3>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="img/logo.png" class="logo">
+                  <div class="content">
+                    <h1>Digital Marketing</h1>
+                    <h3>UI/UX, Design</h3>
+                  </div>
+                </div>
+                      <div class="card">
+                  <img src="img/logo.png" class="logo">
+                  <div class="content">
+                    <h1>Digital Marketing</h1>
+                    <h3>UI/UX, Design</h3>
+                  </div>
+                </div>
+                      <div class="card">
+                  <img src="img/logo.png" class="logo">
+                  <div class="content">
+                    <h1>Digital Marketing</h1>
+                    <h3>UI/UX, Design</h3>
+                  </div>
+                </div>
+                      <div class="card">
+                  <img src="img/logo.png" class="logo">
+                  <div class="content">
+                    <h1>Digital Marketing</h1>
+                    <h3>UI/UX, Design</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="map">
+              <button class="active first"></button>
+              <button class="second"></button>
+              <button class="third"></button>
+            </div>
+          </div>
+
+    </main>
+
+    <footer>
+        <section>
+            <img src="img/logo.png" alt="">
+
+            <div>
+                <ul class="listNav">
+                    <li><a href="index.html">Index</a></li>
+                    <li><a href="nosgraines.html">Nos Graines de Talents</a></li>
+                    <li><a href="gallerie.html">Gallerie Photos</a></li>
+                    <li><a href="jpo.html">Notre Journée Portes Ouvertes</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <a href="test.html"><i class="fa-brands fa-facebook"></i></a>
+
+                <a href="test.html"><i class="fa-brands fa-instagram"></i></a>
+
+                <a href="test.html"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+
+        </section>
+
+    </footer>
+
+    <script>
+       
+
+const buttonsWrapper = document.querySelector(".map");
+const slides = document.querySelector(".inner");
+
+buttonsWrapper.addEventListener("click", e => {
+  if (e.target.nodeName === "BUTTON") {
+    Array.from(buttonsWrapper.children).forEach(item =>
+      item.classList.remove("active")
+    );
+    if (e.target.classList.contains("first")) {
+      slides.style.transform = "translateX(-0%)";
+      e.target.classList.add("active");
+    } else if (e.target.classList.contains("second")) {
+      slides.style.transform = "translateX(-33.33333333333333%)";
+      e.target.classList.add("active");
+    } else if (e.target.classList.contains('third')){
+      slides.style.transform = 'translatex(-66.6666666667%)';
+      e.target.classList.add('active');
+    }
+  }
+});
+
+    </script>
+
+
+</body>
+</html>

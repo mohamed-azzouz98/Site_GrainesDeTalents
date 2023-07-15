@@ -435,6 +435,7 @@ figcaption span {
   margin: 0;
   display: flex;
   margin: 0 -10px;
+  
 }
 .carousel__slides + .carousel__thumbnails {
   margin-top: 20px;

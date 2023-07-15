@@ -108,10 +108,29 @@ footer i{
 }
 
 #detailFormation{
+    width: 80%;
     background-color: #FFFFFF;
     margin-top: 15px;
     padding: 25px;
+    text-align: center;
+    line-height: 1.5em;
 }
+
+
+#tableGdt{
+  border-collapse: collapse;
+
+  margin: 0 auto;
+}
+
+#tableGdt td{
+  border: red solid;
+  width: 100px;
+  text-align: center;
+  
+}
+
+
 
 
 

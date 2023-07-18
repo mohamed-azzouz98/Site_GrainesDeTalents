@@ -101,19 +101,55 @@ footer i{
 
 }
 
-#interviewProgram{
-    background-color: red;
-    width: 50%;
-    height: 400px;
+#showInterview{
+  padding: 15px;
+  margin-bottom: 10px;
 }
 
+#interviewProgram{
+  width: 50%;
+  height: 1400px;   
+  
+}
+
+#interviewProgram.hide {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+#interviewProgram table{
+  border-collapse: collapse;
+}
+
+#interviewProgram table th{
+  padding: 10px;
+  
+}
+
+#interviewProgram table tr td:nth-child(1){
+  
+  padding-right: 20px;
+}
+
+
+#interviewProgram table tr td:nth-child(2){
+  border-left: solid;
+  padding-left: 20px;
+}
+
+
 #detailFormation{
-    width: 80%;
+   width: 120%;
     background-color: #FFFFFF;
     margin-top: 15px;
     padding: 25px;
     text-align: center;
     line-height: 1.5em;
+}
+
+#detailFormation ul{
+  list-style: none;
 }
 
 
@@ -124,9 +160,11 @@ footer i{
 }
 
 #tableGdt td{
-  border: red solid;
-  width: 100px;
+  border: black solid;
+  width: 300px;
   text-align: center;
+  padding: 10px;
+  
   
 }
 

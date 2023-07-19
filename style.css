@@ -87,8 +87,7 @@ footer i{
 
 
 
-
- /*------ Accueil ------*/
+/*------ Accueil ------*/
 /*------ Accueil ------*/
 /*------ Accueil ------*/
 
@@ -116,7 +115,7 @@ footer i{
   padding: 10px;
 }
 
-#interviewProgram table td {
+.reponseNathalie, .reponseZoe {
   text-align: justify;
   
 }
@@ -162,6 +161,39 @@ footer i{
   display: none;
 }
 
+#interviewMobile{
+  display: none;
+}
+
+.nathalie{
+  text-align: center ;
+  background-color: rgba(255, 0, 0, 0.5);
+  padding: 2px;
+  border: rgb(255, 0, 0) dashed;
+}
+
+.zoe{
+  text-align: center;
+  background-color: rgba(0, 0, 255, 0.5);
+  padding: 2px;
+  border: rgb(0, 0, 255) dashed;
+}
+
+.question{
+  text-align: center;
+  background-color: rgba(0, 255, 0, 0.25);
+  padding: 5px;
+  font-weight: bold;
+  border: black solid;
+}
+
+.reponseNathalie{
+  background-color: rgba(255, 0, 0, 0.25);
+}
+
+.reponseZoe{
+  background-color: rgba(0, 0, 255, 0.25);
+}
 
 
 
@@ -321,6 +353,9 @@ blockquote:before {
 /*------ Galerie Photo ------*/
 /*------ Galerie Photo ------*/
 
+#carouselMobile{
+  display: none;
+}
 
 .container {
   max-width: 1044px;
@@ -535,6 +570,11 @@ blockquote:before {
     font-size: 1em;
   }
 
+  .listNav li{
+    width: 33%;
+    text-align: center;
+  }
+
   footer section{
     flex-direction: column;
 }
@@ -553,13 +593,19 @@ footer i{
     font-size: 40px;
 }
 
-  .titlePage{    
+  .titlePage{   
+    width: 100%;
     font-size: 1em;
+    margin-left: -15px;
 }
   
   #infoFormation{
     width: 80%;
     font-size: 1.1em;
+  }
+
+  #detailFormation{
+    margin-left: -15px;
   }
 
   #tableGdt{
@@ -595,17 +641,43 @@ footer i{
   }
 
   #interviewMobile{
+    display: block;
     width: 55vh;
   }
 
-  #interviewMobile tr td:nth-child(1){
-    text-align: center;
-    background-color: red;
-  }
+ .map{
+  display: none;
+ }
 
 
- 
+.inner {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
 
- 
-  
+.name{
+  padding: 5px;
+}
+
+.presentation, .citation{
+  font-size: 0.9em;
+  width: 400px;
+  margin-left: -90px;
+}
+
+.container{
+  display: none;
+}
+
+#carouselMobile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#carouselMobile img{
+  width: 50%;
+}
+
 }

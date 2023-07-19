@@ -600,7 +600,7 @@ footer i{
 }
   
   #infoFormation{
-    width: 70%;
+    width: 80%;
     font-size: 1.1em;
   }
 
@@ -642,7 +642,7 @@ footer i{
 
   #interviewMobile{
     display: block;
-    width: 55vh;
+    width: 380px;
   }
 
  .map{

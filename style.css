@@ -643,6 +643,7 @@ footer i{
   #interviewMobile{
     display: block;
     width: 380px;
+    font-size: 5em;
   }
 
  .map{

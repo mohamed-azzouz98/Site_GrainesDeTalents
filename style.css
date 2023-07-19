@@ -560,9 +560,7 @@ blockquote:before {
 
 @media screen and (max-width:640px) {
 
-  .navBar{
-    width: 440px;
-  }
+
   .navBar img{
     display: flex;
     margin: 0 auto;
@@ -644,11 +642,9 @@ footer i{
 
   #interviewMobile{
     display: block;
-    width: 350px;
-    margin-left: -20px;
+    width: 340px;
+    
   }
-
-
 
  .map{
   display: none;

@@ -87,10 +87,10 @@ footer i{
 
 
 
-#indexMain{
-    background-color: red;
-    
-}
+
+ /*------ Accueil ------*/
+/*------ Accueil ------*/
+/*------ Accueil ------*/
 
 #infoFormation{
     background-color: #9DB59B;
@@ -98,25 +98,15 @@ footer i{
     margin: 0 auto;
     flex-direction: column;
     align-items: center;
-
 }
 
-#showInterview{
-  padding: 15px;
-  margin-bottom: 10px;
-}
+
 
 #interviewProgram{
   width: 50%;
-  height: 1400px;   
-  
 }
 
-#interviewProgram.hide {
-  height: 0;
-  opacity: 0;
-  overflow: hidden;
-}
+
 
 #interviewProgram table{
   border-collapse: collapse;
@@ -124,11 +114,14 @@ footer i{
 
 #interviewProgram table th{
   padding: 10px;
+}
+
+#interviewProgram table td {
+  text-align: justify;
   
 }
 
 #interviewProgram table tr td:nth-child(1){
-  
   padding-right: 20px;
 }
 
@@ -140,12 +133,12 @@ footer i{
 
 
 #detailFormation{
-   width: 120%;
-    background-color: #FFFFFF;
-    margin-top: 15px;
-    padding: 25px;
-    text-align: center;
-    line-height: 1.5em;
+  width: 96.5%;
+  background-color: #FFFFFF;
+  margin-top: 15px;
+  padding: 25px;
+  text-align: center;
+  line-height: 1.5em;
 }
 
 #detailFormation ul{
@@ -155,7 +148,6 @@ footer i{
 
 #tableGdt{
   border-collapse: collapse;
-
   margin: 0 auto;
 }
 
@@ -163,11 +155,12 @@ footer i{
   border: black solid;
   width: 300px;
   text-align: center;
-  padding: 10px;
-  
-  
+  padding: 10px; 
 }
 
+#tableGdtMobile{
+  display: none;
+}
 
 
 
@@ -319,28 +312,6 @@ blockquote:before {
   color: #999;
 }
 
-figcaption {
-  position: relative;
-  text-align: right;
-}
-figcaption:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background: #141414;
-}
-figcaption span {
-  display: inline-block;
-  position: relative;
-  margin-right: 40px;
-  padding: 0 8px;
-  background: #d6d6d6;
-  z-index: 1;
-}
 
 
 
@@ -372,7 +343,12 @@ figcaption span {
   padding: 0;
   position: absolute;
 }
-
+.carousel > input:nth-of-type(10):checked ~ .carousel__slides .carousel__slide:first-of-type {
+  margin-left: -900%;
+}
+.carousel > input:nth-of-type(9):checked ~ .carousel__slides .carousel__slide:first-of-type {
+  margin-left: -800%;
+}
 .carousel > input:nth-of-type(8):checked ~ .carousel__slides .carousel__slide:first-of-type {
   margin-left: -700%;
 }
@@ -419,6 +395,12 @@ figcaption span {
   box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
 }
 .carousel > input:nth-of-type(8):checked ~ .carousel__thumbnails li:nth-of-type(8) {
+  box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+}
+.carousel > input:nth-of-type(9):checked ~ .carousel__thumbnails li:nth-of-type(9) {
+  box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+}
+.carousel > input:nth-of-type(10):checked ~ .carousel__thumbnails li:nth-of-type(10) {
   box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
 }
 .carousel__slides {
@@ -534,4 +516,96 @@ figcaption span {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+
+/*------ RESPONSIVE ------*/
+/*------ RESPONSIVE ------*/
+/*------ RESPONSIVE ------*/
+
+
+@media screen and (max-width:640px) {
+
+  .navBar img{
+    display: flex;
+    margin: 0 auto;
+    width: 25%;
+}
+  .listNav a{
+    font-size: 1em;
+  }
+
+  footer section{
+    flex-direction: column;
+}
+
+footer img{
+    width: 25%;
+}
+
+footer section div ul{
+    display: flex;
+    flex-direction: column;
+}
+
+
+footer i{
+    font-size: 40px;
+}
+
+  .titlePage{    
+    font-size: 1em;
+}
+  
+  #infoFormation{
+    width: 80%;
+    font-size: 1.1em;
+  }
+
+  #tableGdt{
+    display: none;
+  }
+
+  #tableGdtMobile{
+    display: block;
+    border: collapse;
+  }
+
+  #tableGdtMobile table{
+    border-collapse: collapse;   
+  }
+
+  #tableGdtMobile td{
+    border: black solid;
+    text-align: center;
+    padding: 10px; 
+  }
+
+  h2{
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  #interview{
+    display: none;
+  }
+
+  #infoFormation{
+    display: block;
+  }
+
+  #interviewMobile{
+    width: 55vh;
+  }
+
+  #interviewMobile tr td:nth-child(1){
+    text-align: center;
+    background-color: red;
+  }
+
+
+ 
+
+ 
+  
 }
